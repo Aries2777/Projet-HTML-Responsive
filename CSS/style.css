@@ -9,7 +9,19 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+nav button {
+    margin-left: auto;
+}
+
+nav a {
+    margin: 0 15px;
+}
+
 body {
     background-image: url(../image/Runeterra\ Map.png);
     background-size: cover;
@@ -21,7 +33,7 @@ body {
     margin: 0 auto; /* Centrer le carrousel horizontalement */
     height: 700px; /* Hauteur fixe du carrousel */
     overflow: hidden; /* Pour que rien ne dépasse du carrousel */
-    
+    border: 2px solid white;
 }
 
 #carouselExampleControls .carousel-inner {

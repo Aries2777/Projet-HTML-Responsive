@@ -1,0 +1,28 @@
+/* Sélectionne la balise <nav> et lui applique un fond noir */
+nav {
+    background-color: rgb(45, 45, 45); /* Définit la couleur de fond */
+    color: white; /* Change la couleur du texte en blanc (optionnel) */
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+
+
+}
+body {
+    background-image: url(../image/Runeterra\ Map.png);
+    background-size: cover;
+}
+
+.row-content {
+    margin-top: 60px; /* Compense la hauteur de la nav (ajustez selon la hauteur de votre nav) */
+}
+
+.card {
+    margin: 20px;
+    background-color: rgb(45, 45, 45);
+
+}

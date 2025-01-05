@@ -3,31 +3,29 @@
     <head>
         <title>GameMania</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="sylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fa fa-sitemap fa-lg"></i>Acceuil</a></li>
-                <li><a href="#jeu"><i class="fa fa-gamepad fa-lg"></i>Jeux</a></li>
-                <li><a href="contacte.html"><i class="fa fa-file fa-lg"></i>Contacte</a></li>
-            </ul>
-
+        <nav class="navbar-expand lg">     
+            <a href="index.html"><i class="fa fa-sitemap fa-lg"></i>Acceuil</a>
+            <a href="#jeu"><i class="fa fa-gamepad fa-lg"></i>Jeux</a>
+            <a href="contacte.html"><i class="fa fa-file fa-lg"></i>Contact</a>
+            <button type="button" class="btn btn btn-success" data-toggle="modal" data-target="#loginModal">Login Up</button>
         </nav>
-        <div class="row row-content">
+        <div class="row row-content" id="carte">
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="card mycard">
                     <img class="card-img-top photo" src="../image/league.jpg" alt="Card image cap">
                     <div class="card-body bodycard">
                         <h5 class="card-title">League of Legend</h5>
-                        <p class="card-text contentcard">Un jeu de type MOBA extrement connu</p>
+                        <p class="card-text contentcard">Un jeu de type MOBA extrement connu ou le but est de détruire le Nexus ennemi, le jeu se passe avec 2 équipe de 5 joueurs qui s'affronte sur la faille de l'invocateur </p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 ">
                 <div class="card mycard">
                     <img class="card-img-top photo" src="../image/rust.jpg" alt="Card image">
                     <div class="card-body bodycard">
@@ -36,16 +34,25 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 ">
                 <div class="card mycard">
                     <img class="card-img-top photo" src="../image/wow.jpg" alt="Card image">
                     <div class="card-body bodycard">
                         <h5>World of Warcraft Classic</h5>
-                        <p class="card-text contentcard">Un MMORPG sur l'univers de Warcraft</p>
+                        <p class="card-text contentcard">Un MMORPG sur l'univers de Warcraft, un des premier MMORPG ou l'univers est vaste et permet d'avoir une grande liberté</p>
                     </div>
                 </div>
             </div>
-            <h5>Bonjour ceci est un test</h5>
+            <div class="col-12 col-sm-6 col-md-4 " id="jeu">
+                <div class="card mycard">
+                    <img class="card-img-top photo" src="../image/apexlegend.jpg" alt="Card image">
+                    <div class="card-body bodycard">
+                        <h5>Apex Legends</h5>
+                        <p class="card-text contentcard">Un BattleRoyal qui se joue en équipe de 3 joueurs sur une énorme carte, le but du jeu est d'être la dernière équipe en vie pour gagner</p>
+                    </div>
+                </div>
+            </div>
+            
 
         </div>
 

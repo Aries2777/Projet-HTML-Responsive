@@ -9,12 +9,37 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 1000;
-
-
 }
 body {
     background-image: url(../image/Runeterra\ Map.png);
     background-size: cover;
+}
+
+#carouselExampleControls {
+    width: 100%; /* Largeur du carrousel, ajustée à 100% de son parent */
+    max-width: 1200px; /* Largeur maximale du carrousel */
+    margin: 0 auto; /* Centrer le carrousel horizontalement */
+    height: 700px; /* Hauteur fixe du carrousel */
+    overflow: hidden; /* Pour que rien ne dépasse du carrousel */
+    
+}
+
+#carouselExampleControls .carousel-inner {
+    height: 100%; /* Hauteur de l'intérieur du carrousel */
+    display: flex;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .row-content {
